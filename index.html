@@ -13,19 +13,22 @@
 <script src="script.js" defer></script>
 </head>
 <body>
-<header>
-    <h1>Tudo avençado</h1>
-</header>
- <form id="todo-fora">
-    <p>Adicione uma tarefa:</p>
+
 <div class="todo-containe">
+    <header>
+        <h1>Todo avençado</h1>
+    </header>
+     <form id="todo-form">
+        <p>Adicione uma tarefa:</p>
+    <div class="form-control">
     <input type="text" id="todo-input" 
     placeholder="O que você vai fazer?">
     <button type="submit">
         <i class="fa-thin fa-plus"></i>
     </button>
+</div>
 </form>
-<form id="edit-fora" class="hid">
+<form id="edit-form"  class="hide">
     <p>Edite a sua tarefa</p>
     <div class="form-control">
         <input type="text" id="edito-input">
@@ -53,33 +56,33 @@
             <option value="todo">A fazer</option>
         </select>
     </div>
-    <div id="todo-list">
-       <div class="todo">
-        <h3>Estou fazendo alguma coisa...</h3>
-        <button class="sinish-todo">
-            <i class="fa-solid fa-check"></i>
-        </button>
-        <button class="edit-todo">
-            <i class="fa-solid fa-pen"></i>
-        </button>
-        <button class="remove-todo">
-          <i class="fa-solid fa-xmark"></i>
-        </button>
-    </div>
-    <div class="todo">
-        <h3>Estudando java script</h3>
-        <button class="sinish-todo">
-            <i class="fa-solid fa-check"></i>
-        </button>
-        <button class="edit-todo">
-            <i class="fa-solid fa-pen"></i>
-        </button>
-        <button class="remove-todo">
-          <i class="fa-solid fa-xmark"></i>
-        </button>
-    </div>
-    </div>
   </div>
+  <div id="todo-list">
+    <div class="todo done" >
+     <h3>Estou fazendo alguma coisa...</h3>
+     <button class="sinish-todo">
+         <i class="fa-solid fa-check"></i>
+     </button>
+     <button class="edit-todo">
+         <i class="fa-solid fa-pen"></i>
+     </button>
+     <button class="remove-todo">
+       <i class="fa-solid fa-xmark"></i>
+     </button>
+ </div>
+ <div class="todo">
+     <h3>Estudando java script</h3>
+     <button class="sinish-todo">
+         <i class="fa-solid fa-check"></i>
+     </button>
+     <button class="edit-todo">
+         <i class="fa-solid fa-pen"></i>
+     </button>
+     <button class="remove-todo">
+       <i class="fa-solid fa-xmark"></i>
+     </button>
+ </div>
+ </div>
 </div>
 </body>
 </html>
