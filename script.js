@@ -12,24 +12,30 @@ const saveTodo =(text) => {
      todo.classList.add("todo");
 
      const todoTitle = document.createElement("h3");
-     todoTitle.innertext= text;
+     todoTitle.innertext= (text);
      todo.appendChild(todoTitle);
 
      const doneBtn = document.createElement("button");
      doneBtn.classList.add('finish-todo');
-     doneBtn.innerHTML =('<i class="fa-solid fa-check-double"> </i>'); 
+     doneBtn.innerHTML =('<i class="fa-solid fa-check"> </i>'); 
      todo.appendChild(doneBtn);
 
-     const doneBtn = document.createElement("button");
-     doneBtn.classList.add('finish-todo');
-     doneBtn.innerHTML =('<i class="fa-solid fa-check-double"> </i>');
-     todo.appendChild(doneBtn);
+     const editBtn = document.createElement("button");
+     editBtn.classList.add('edit-todo');
+     editBtn.innerHTML =('<i class="fa-solid fa-pen"> </i>');
+     todo.appendChild(editBtn);
 
-     const doneBtn = document.createElement("button");
-     doneBtn.classList.add('finish-todo');
-     doneBtn.innerHTML =('<i class="fa-solid fa-check-double"> </i>')
-     todo.appendChild(doneBtn);
-}
+     const deleteBtn = document.createElement("button");
+     deleteBtn.classList.add('remove-todo');
+     deleteBtn.innerHTML =('<i class="fa-solid fa-xmark"> </i>');
+     todo.appendChild(deleteBtn);
+
+     todoList.appendChild(todo);
+
+     todoInput.value="";
+
+     todoInput.focus=();
+};
 
 
 //eventos
